@@ -37,9 +37,6 @@ Functional Simulation
 Logic Synthesis (Yosys)
       │
       ▼
-Logic Equivalence Check (LEC)
-      │
-      ▼
 Static Timing Analysis (OpenSTA)
       │
       ▼
