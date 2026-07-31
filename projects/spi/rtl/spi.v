@@ -1,0 +1,7 @@
+module spi (
+
+);
+
+
+
+endmodule
