@@ -1,0 +1,38 @@
+# SystemC::Coverage-3
+C 'flfsr_4bit.vl10n5tbranchpagev_branch/lfsr_4bitoifS10-11hlfsr_4bit_tb.dut' 3
+C 'flfsr_4bit.vl10n6tbranchpagev_branch/lfsr_4bitoelseS13hlfsr_4bit_tb.dut' 20
+C 'flfsr_4bit.vl13n28texprpagev_expr/lfsr_4bito(q[3]==0 && q[2]==0) => 0hlfsr_4bit_tb.dut' 6
+C 'flfsr_4bit.vl13n28texprpagev_expr/lfsr_4bito(q[3]==0 && q[2]==1) => 1hlfsr_4bit_tb.dut' 5
+C 'flfsr_4bit.vl13n28texprpagev_expr/lfsr_4bito(q[3]==1 && q[2]==0) => 1hlfsr_4bit_tb.dut' 5
+C 'flfsr_4bit.vl13n28texprpagev_expr/lfsr_4bito(q[3]==1 && q[2]==1) => 0hlfsr_4bit_tb.dut' 4
+C 'flfsr_4bit.vl4n17ttogglepagev_toggle/lfsr_4bitoclk:0->1hlfsr_4bit_tb.dut' 22
+C 'flfsr_4bit.vl4n17ttogglepagev_toggle/lfsr_4bitoclk:1->0hlfsr_4bit_tb.dut' 22
+C 'flfsr_4bit.vl5n17ttogglepagev_toggle/lfsr_4bitoreset:0->1hlfsr_4bit_tb.dut' 1
+C 'flfsr_4bit.vl5n17ttogglepagev_toggle/lfsr_4bitoreset:1->0hlfsr_4bit_tb.dut' 1
+C 'flfsr_4bit.vl6n23ttogglepagev_toggle/lfsr_4bitoq[0]:0->1hlfsr_4bit_tb.dut' 6
+C 'flfsr_4bit.vl6n23ttogglepagev_toggle/lfsr_4bitoq[0]:1->0hlfsr_4bit_tb.dut' 6
+C 'flfsr_4bit.vl6n23ttogglepagev_toggle/lfsr_4bitoq[1]:0->1hlfsr_4bit_tb.dut' 6
+C 'flfsr_4bit.vl6n23ttogglepagev_toggle/lfsr_4bitoq[1]:1->0hlfsr_4bit_tb.dut' 5
+C 'flfsr_4bit.vl6n23ttogglepagev_toggle/lfsr_4bitoq[2]:0->1hlfsr_4bit_tb.dut' 6
+C 'flfsr_4bit.vl6n23ttogglepagev_toggle/lfsr_4bitoq[2]:1->0hlfsr_4bit_tb.dut' 5
+C 'flfsr_4bit.vl6n23ttogglepagev_toggle/lfsr_4bitoq[3]:0->1hlfsr_4bit_tb.dut' 5
+C 'flfsr_4bit.vl6n23ttogglepagev_toggle/lfsr_4bitoq[3]:1->0hlfsr_4bit_tb.dut' 5
+C 'flfsr_4bit.vl9n1tlinepagev_line/lfsr_4bitoblockS9hlfsr_4bit_tb.dut' 23
+C 'flfsr_4bit_tb.vl17n1tlinepagev_line/lfsr_4bit_tboblockS17hlfsr_4bit_tb' 44
+C 'flfsr_4bit_tb.vl17n17texprpagev_expr/lfsr_4bit_tbo(clk==0) => 1hlfsr_4bit_tb' 22
+C 'flfsr_4bit_tb.vl17n17texprpagev_expr/lfsr_4bit_tbo(clk==1) => 0hlfsr_4bit_tb' 22
+C 'flfsr_4bit_tb.vl20n1tlinepagev_line/lfsr_4bit_tboblockS20-22,24-25,28-30,33,36hlfsr_4bit_tb' 1
+C 'flfsr_4bit_tb.vl33n5tlinepagev_line/lfsr_4bit_tboblockS33-34hlfsr_4bit_tb' 20
+C 'flfsr_4bit_tb.vl40n1tlinepagev_line/lfsr_4bit_tboblockS40-41hlfsr_4bit_tb' 22
+C 'flfsr_4bit_tb.vl5n5ttogglepagev_toggle/lfsr_4bit_tboclk:0->1hlfsr_4bit_tb' 22
+C 'flfsr_4bit_tb.vl5n5ttogglepagev_toggle/lfsr_4bit_tboclk:1->0hlfsr_4bit_tb' 22
+C 'flfsr_4bit_tb.vl6n5ttogglepagev_toggle/lfsr_4bit_tboreset:0->1hlfsr_4bit_tb' 1
+C 'flfsr_4bit_tb.vl6n5ttogglepagev_toggle/lfsr_4bit_tboreset:1->0hlfsr_4bit_tb' 1
+C 'flfsr_4bit_tb.vl7n12ttogglepagev_toggle/lfsr_4bit_tboq[0]:0->1hlfsr_4bit_tb' 6
+C 'flfsr_4bit_tb.vl7n12ttogglepagev_toggle/lfsr_4bit_tboq[0]:1->0hlfsr_4bit_tb' 6
+C 'flfsr_4bit_tb.vl7n12ttogglepagev_toggle/lfsr_4bit_tboq[1]:0->1hlfsr_4bit_tb' 6
+C 'flfsr_4bit_tb.vl7n12ttogglepagev_toggle/lfsr_4bit_tboq[1]:1->0hlfsr_4bit_tb' 5
+C 'flfsr_4bit_tb.vl7n12ttogglepagev_toggle/lfsr_4bit_tboq[2]:0->1hlfsr_4bit_tb' 6
+C 'flfsr_4bit_tb.vl7n12ttogglepagev_toggle/lfsr_4bit_tboq[2]:1->0hlfsr_4bit_tb' 5
+C 'flfsr_4bit_tb.vl7n12ttogglepagev_toggle/lfsr_4bit_tboq[3]:0->1hlfsr_4bit_tb' 5
+C 'flfsr_4bit_tb.vl7n12ttogglepagev_toggle/lfsr_4bit_tboq[3]:1->0hlfsr_4bit_tb' 5
