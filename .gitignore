@@ -1,40 +1,21 @@
-# macOS
-.DS_Store
 
-# Editors
-.vscode/
-.idea/
-
-# Verilator
-obj_dir/
 
 # Simulation
 *.vcd
-*.vvp
-*_sim
+*.fst
+*.out
+*.gtkw
 
 # Coverage
-coverage/
-coverage_report/
-
-# Logs
-logs/
-*.log
-
-# Reports
-reports/
-
-# OpenROAD
-build/
-results/
+coverage.dat
 
 # Temporary
 *.tmp
-*.swp
 *.bak
 
-# Python
-__pycache__/
+# VS Code
+.vscode/
 
-# Generated output
-output/
+# Build outputs (if regenerated)
+results/
+logs/
