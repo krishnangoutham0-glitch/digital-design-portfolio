@@ -1,0 +1,188 @@
+OpenSTA 3.1.0 5be03c5cca Copyright (c) 2026, Parallax Software, Inc.
+License GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>
+
+This is free software, and you are free to change and redistribute it
+under certain conditions; type `show_copying' for details. 
+This program comes with ABSOLUTELY NO WARRANTY; for details type `show_warranty'.
+Startpoint: reset (input port clocked by clk)
+Endpoint: _36_ (recovery check against rising-edge clock clk)
+Path Group: asynchronous
+Path Type: max
+
+Fanout       Cap      Slew     Delay      Time   Description
+-------------------------------------------------------------------------------------
+                    0.1000    0.0000    0.0000   clock clk (rise edge)
+                              0.3000    0.3000   clock network delay (ideal)
+                              1.0000    1.3000 v input external delay
+     4    6.1974    0.0000    0.0000    1.3000 v reset (in)
+                                                 reset (net)
+                    0.0000    0.0000    1.3000 v _34_/A (INV_X1)
+     1    1.7785    0.0065    0.0087    1.3087 ^ _34_/ZN (INV_X1)
+                                                 _03_ (net)
+                    0.0065    0.0000    1.3087 ^ _36_/RN (DFFR_X1)
+                                        1.3087   data arrival time
+
+                    0.1000   10.0000   10.0000   clock clk (rise edge)
+                              0.3000   10.3000   clock network delay (ideal)
+                             -0.2000   10.1000   clock uncertainty
+                              0.0000   10.1000   clock reconvergence pessimism
+                                       10.1000 ^ _36_/CK (DFFR_X1)
+                              0.0717   10.1717   library recovery time
+                                       10.1717   data required time
+-------------------------------------------------------------------------------------
+                                       10.1717   data required time
+                                       -1.3087   data arrival time
+-------------------------------------------------------------------------------------
+                                        8.8630   slack (MET)
+
+
+Startpoint: _36_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: count[0] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout       Cap      Slew     Delay      Time   Description
+-------------------------------------------------------------------------------------
+                    0.1000    0.0000    0.0000   clock clk (rise edge)
+                              0.3000    0.3000   clock network delay (ideal)
+                    0.1000    0.0000    0.3000 ^ _36_/CK (DFFR_X1)
+     5    7.1963    0.0209    0.1300    0.4300 ^ _36_/Q (DFFR_X1)
+                                                 count[0] (net)
+                    0.0209    0.0000    0.4300 ^ count[0] (out)
+                                        0.4300   data arrival time
+
+                    0.1000   10.0000   10.0000   clock clk (rise edge)
+                              0.3000   10.3000   clock network delay (ideal)
+                             -0.2000   10.1000   clock uncertainty
+                              0.0000   10.1000   clock reconvergence pessimism
+                             -1.5000    8.6000   output external delay
+                                        8.6000   data required time
+-------------------------------------------------------------------------------------
+                                        8.6000   data required time
+                                       -0.4300   data arrival time
+-------------------------------------------------------------------------------------
+                                        8.1700   slack (MET)
+
+
+Startpoint: reset (input port clocked by clk)
+Endpoint: _36_ (removal check against rising-edge clock clk)
+Path Group: asynchronous
+Path Type: min
+
+Fanout       Cap      Slew     Delay      Time   Description
+-------------------------------------------------------------------------------------
+                    0.1000    0.0000    0.0000   clock clk (rise edge)
+                              0.3000    0.3000   clock network delay (ideal)
+                              0.2000    0.5000 v input external delay
+     4    6.1974    0.0000    0.0000    0.5000 v reset (in)
+                                                 reset (net)
+                    0.0000    0.0000    0.5000 v _34_/A (INV_X1)
+     1    1.7785    0.0065    0.0087    0.5087 ^ _34_/ZN (INV_X1)
+                                                 _03_ (net)
+                    0.0065    0.0000    0.5087 ^ _36_/RN (DFFR_X1)
+                                        0.5087   data arrival time
+
+                    0.1000    0.0000    0.0000   clock clk (rise edge)
+                              0.3000    0.3000   clock network delay (ideal)
+                              0.0500    0.3500   clock uncertainty
+                              0.0000    0.3500   clock reconvergence pessimism
+                                        0.3500 ^ _36_/CK (DFFR_X1)
+                              0.2029    0.5529   library removal time
+                                        0.5529   data required time
+-------------------------------------------------------------------------------------
+                                        0.5529   data required time
+                                       -0.5087   data arrival time
+-------------------------------------------------------------------------------------
+                                       -0.0441   slack (VIOLATED)
+
+
+Startpoint: _36_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _36_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+Fanout       Cap      Slew     Delay      Time   Description
+-------------------------------------------------------------------------------------
+                    0.1000    0.0000    0.0000   clock clk (rise edge)
+                              0.3000    0.3000   clock network delay (ideal)
+                    0.1000    0.0000    0.3000 ^ _36_/CK (DFFR_X1)
+     1    1.1283    0.0090    0.0816    0.3816 ^ _36_/QN (DFFR_X1)
+                                                 _16_[0] (net)
+                    0.0090    0.0000    0.3816 ^ _36_/D (DFFR_X1)
+                                        0.3816   data arrival time
+
+                    0.1000    0.0000    0.0000   clock clk (rise edge)
+                              0.3000    0.3000   clock network delay (ideal)
+                              0.0500    0.3500   clock uncertainty
+                              0.0000    0.3500   clock reconvergence pessimism
+                                        0.3500 ^ _36_/CK (DFFR_X1)
+                              0.0188    0.3688   library hold time
+                                        0.3688   data required time
+-------------------------------------------------------------------------------------
+                                        0.3688   data required time
+                                       -0.3816   data arrival time
+-------------------------------------------------------------------------------------
+                                        0.0128   slack (MET)
+
+
+wns max 0.00
+tns max 0.00
+Clock                   Period          Waveform
+----------------------------------------------------
+clk                      10.00        0.00      5.00
+Startpoint: reset (input port clocked by clk)
+Endpoint: _36_ (recovery check against rising-edge clock clk)
+Path Group: asynchronous
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.30    0.30   clock network delay (ideal)
+   1.00    1.30 v input external delay
+   0.00    1.30 v reset (in)
+   0.01    1.31 ^ _34_/ZN (INV_X1)
+   0.00    1.31 ^ _36_/RN (DFFR_X1)
+           1.31   data arrival time
+
+  10.00   10.00   clock clk (rise edge)
+   0.30   10.30   clock network delay (ideal)
+  -0.20   10.10   clock uncertainty
+   0.00   10.10   clock reconvergence pessimism
+          10.10 ^ _36_/CK (DFFR_X1)
+   0.07   10.17   library recovery time
+          10.17   data required time
+---------------------------------------------------------
+          10.17   data required time
+          -1.31   data arrival time
+---------------------------------------------------------
+           8.86   slack (MET)
+
+
+Startpoint: _36_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: count[0] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.30    0.30   clock network delay (ideal)
+   0.00    0.30 ^ _36_/CK (DFFR_X1)
+   0.13    0.43 ^ _36_/Q (DFFR_X1)
+   0.00    0.43 ^ count[0] (out)
+           0.43   data arrival time
+
+  10.00   10.00   clock clk (rise edge)
+   0.30   10.30   clock network delay (ideal)
+  -0.20   10.10   clock uncertainty
+   0.00   10.10   clock reconvergence pessimism
+  -1.50    8.60   output external delay
+           8.60   data required time
+---------------------------------------------------------
+           8.60   data required time
+          -0.43   data arrival time
+---------------------------------------------------------
+           8.17   slack (MET)
+
+
