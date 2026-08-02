@@ -1,26 +1,29 @@
-read_verilog lfsr_4bit.v
+read_verilog rtl/lfsr_4bit.v
+
 hierarchy -check -top lfsr_4bit
 
 proc
 opt
+
 fsm
 opt
+
 memory
 opt
-
-check
-stat
-
-show -format png -prefix lfsr_4bit_rtl
 
 techmap
 opt
 
-check
+dfflibmap -liberty /Users/gouthamkrishnan/OpenROAD-flow-scripts/flow/platforms/nangate45/lib/NangateOpenCellLibrary_typical.lib
+
+abc -liberty /Users/gouthamkrishnan/OpenROAD-flow-scripts/flow/platforms/nangate45/lib/NangateOpenCellLibrary_typical.lib
+
+clean
+
+write_verilog -noattr synth/lfsr_4bit_synth.v
+
 stat
 
-write_verilog lfsr_4bit_synth.v
-
-show -format png -prefix lfsr_4bit_gate
-
-tee -o lfsr_4bit_report.txt stat
+show \
+-prefix images/gate_schematic \
+-format svg

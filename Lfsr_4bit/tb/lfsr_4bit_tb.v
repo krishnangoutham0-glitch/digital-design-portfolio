@@ -18,7 +18,7 @@ always #5 clk = ~clk;
 
 // Stimulus
 initial begin
-    $dumpfile("lfsr_4bit.vcd");
+    $dumpfile("sim/lfsr_4bit.vcd");
     $dumpvars(0, lfsr_4bit_tb);
 
     clk = 0;
