@@ -1,0 +1,6 @@
+VCD info: dumpfile waveforms/instruction_memory.vcd opened for output.
+Time=0  Address=0  Instruction=0001000000000101
+Time=40000  Address=1  Instruction=0001000100000011
+Time=60000  Address=2  Instruction=0011001000000001
+Time=80000  Address=3  Instruction=1001000000000000
+tb/instruction_memory_tb.v:29: $finish called at 100000 (1ps)
