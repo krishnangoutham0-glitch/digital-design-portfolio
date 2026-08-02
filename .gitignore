@@ -18,5 +18,6 @@ coverage.dat
 .vscode/
 
 # Build outputs (if regenerated)
-results/
-logs/
+# OpenROAD temporary directories
+OpenROAD-flow-scripts/flow/results/
+OpenROAD-flow-scripts/flow/logs/
