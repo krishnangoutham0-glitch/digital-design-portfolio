@@ -1,0 +1,14 @@
+VCD info: dumpfile waveforms/alu.vcd opened for output.
+Time=0 Opcode=0000 A=  0 B=  0 Result=  0 Zero=1
+Time=20000 Opcode=0000 A= 10 B=  5 Result= 15 Zero=0
+Time=40000 Opcode=0001 A= 10 B=  5 Result=  5 Zero=0
+Time=60000 Opcode=0010 A=204 B=170 Result=136 Zero=0
+Time=80000 Opcode=0011 A=204 B=170 Result=238 Zero=0
+Time=100000 Opcode=0100 A=204 B=170 Result=102 Zero=0
+Time=120000 Opcode=0101 A=170 B=170 Result= 85 Zero=0
+Time=140000 Opcode=0110 A=  4 B=170 Result=  8 Zero=0
+Time=160000 Opcode=0111 A=  8 B=170 Result=  4 Zero=0
+Time=180000 Opcode=1000 A= 55 B=170 Result= 55 Zero=0
+Time=200000 Opcode=1001 A= 55 B= 99 Result= 99 Zero=0
+Time=220000 Opcode=0001 A=  5 B=  5 Result=  0 Zero=1
+tb/alu_tb.v:127: $finish called at 240000 (1ps)
