@@ -97,3 +97,30 @@ reg [INSTR_WIDTH-1:0] mem [0:(1<<ADDR_WIDTH)-1];
 This allows the same RTL to support different instruction widths and memory sizes by modifying only the parameters.
 
 This improves scalability and code reusability.
+
+## Decision 7
+
+### Why is the Instruction Decoder purely combinational?
+
+The Instruction Decoder only extracts fields from the instruction.
+
+No state is stored and no sequential behavior is required.
+
+Therefore, the decoder is implemented using continuous assignments instead of clocked logic.
+
+---
+
+## Decision 8
+
+### Why are decoder outputs 4 bits wide?
+
+The current processor instruction format divides the 16-bit instruction into four equal fields:
+
+- Opcode
+- Destination Register
+- Source Register 1
+- Source Register 2
+
+Each field occupies four bits, simplifying the decoder implementation.
+
+This instruction format may evolve in future versions to support immediate operands and additional instruction types.

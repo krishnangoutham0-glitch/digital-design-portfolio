@@ -38,3 +38,22 @@
 - Learned the difference between memory width and memory depth.
 - Learned why Instruction Memory is implemented as ROM.
 - Learned how a combinational memory read is modeled using a continuous assignment.
+
+## Day 3
+
+### Instruction Decoder
+
+- Designed Instruction Decoder architecture.
+- Implemented combinational instruction decoding.
+- Extracted opcode, destination, source1 and source2 fields.
+- Developed Instruction Decoder testbench.
+- Verified instruction decoding using Icarus Verilog.
+- Validated decoding using GTKWave.
+- Updated project documentation.
+
+### Lessons Learned
+
+- Learned Verilog bit slicing.
+- Understood continuous assignments (`assign`).
+- Learned the difference between `wire` and `reg`.
+- Understood that the decoder interprets instruction fields but does not execute them.
