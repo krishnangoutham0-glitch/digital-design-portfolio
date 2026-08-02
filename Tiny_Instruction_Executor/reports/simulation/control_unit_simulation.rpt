@@ -1,0 +1,13 @@
+VCD info: dumpfile waveforms/control_unit.vcd opened for output.
+Time=0 Opcode=0000 PC=0 | RegWrite=1 PCWrite=1 Halt=0 ALUOp=0000 PCNext=1
+Time=40000 Opcode=0001 PC=1 | RegWrite=1 PCWrite=1 Halt=0 ALUOp=0001 PCNext=2
+Time=60000 Opcode=0010 PC=2 | RegWrite=1 PCWrite=1 Halt=0 ALUOp=0010 PCNext=3
+Time=80000 Opcode=0011 PC=3 | RegWrite=1 PCWrite=1 Halt=0 ALUOp=0011 PCNext=4
+Time=100000 Opcode=0100 PC=4 | RegWrite=1 PCWrite=1 Halt=0 ALUOp=0100 PCNext=5
+Time=120000 Opcode=0101 PC=5 | RegWrite=1 PCWrite=1 Halt=0 ALUOp=0101 PCNext=6
+Time=140000 Opcode=0110 PC=6 | RegWrite=1 PCWrite=1 Halt=0 ALUOp=0110 PCNext=7
+Time=160000 Opcode=0111 PC=7 | RegWrite=1 PCWrite=1 Halt=0 ALUOp=0111 PCNext=8
+Time=180000 Opcode=1000 PC=8 | RegWrite=1 PCWrite=1 Halt=0 ALUOp=1001 PCNext=9
+Time=200000 Opcode=1001 PC=9 | RegWrite=0 PCWrite=0 Halt=1 ALUOp=0000 PCNext=9
+Time=220000 Opcode=1111 PC=10 | RegWrite=0 PCWrite=0 Halt=0 ALUOp=0000 PCNext=10
+tb/control_unit_tb.v:116: $finish called at 240000 (1ps)
