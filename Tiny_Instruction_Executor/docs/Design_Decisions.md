@@ -124,3 +124,22 @@ The current processor instruction format divides the 16-bit instruction into fou
 Each field occupies four bits, simplifying the decoder implementation.
 
 This instruction format may evolve in future versions to support immediate operands and additional instruction types.
+## Decision 9
+
+### Why use sixteen registers?
+
+The instruction format allocates four bits for register addressing.
+
+Four address bits naturally support sixteen registers (R0–R15).
+
+Using sixteen registers avoids wasting instruction bits and keeps the ISA consistent.
+
+---
+
+## Decision 10
+
+### Why use combinational read and synchronous write?
+
+The Register File continuously supplies operands to the ALU without waiting for a clock edge.
+
+Register updates occur only on the rising edge of the clock to ensure deterministic state changes.

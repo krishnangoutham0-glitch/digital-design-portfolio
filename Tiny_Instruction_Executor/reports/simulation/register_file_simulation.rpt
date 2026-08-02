@@ -1,0 +1,10 @@
+VCD info: dumpfile waveforms/register_file.vcd opened for output.
+Time=0 Reset=1 WE=0 WA=0 WD=0 RA1=0 RD1=0 RA2=0 RD2=0
+Time=20000 Reset=0 WE=0 WA=0 WD=0 RA1=0 RD1=0 RA2=0 RD2=0
+Time=30000 Reset=0 WE=1 WA=0 WD=5 RA1=0 RD1=0 RA2=0 RD2=0
+Time=35000 Reset=0 WE=1 WA=0 WD=5 RA1=0 RD1=5 RA2=0 RD2=5
+Time=40000 Reset=0 WE=1 WA=1 WD=3 RA1=0 RD1=5 RA2=0 RD2=5
+Time=50000 Reset=0 WE=0 WA=1 WD=3 RA1=0 RD1=5 RA2=1 RD2=3
+Time=70000 Reset=0 WE=1 WA=2 WD=8 RA1=0 RD1=5 RA2=1 RD2=3
+Time=80000 Reset=0 WE=0 WA=2 WD=8 RA1=2 RD1=8 RA2=0 RD2=5
+tb/register_file_tb.v:116: $finish called at 100000 (1ps)

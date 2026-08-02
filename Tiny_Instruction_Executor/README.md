@@ -1,0 +1,7 @@
+- [x] Program Counter
+- [x] Instruction Memory
+- [x] Instruction Decoder
+- [x] Register File
+- [ ] ALU
+- [ ] Control Unit
+- [ ] Top Module

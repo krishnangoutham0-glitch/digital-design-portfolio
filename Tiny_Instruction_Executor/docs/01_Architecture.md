@@ -161,13 +161,12 @@ This methodology reflects a structured ASIC design workflow where IP blocks are 
 
 # Development Progress
 
-## Module Development
 | Module | Architecture | RTL | Testbench | Simulation | Status |
 |---------|:------------:|:---:|:---------:|:----------:|:------:|
 | Program Counter | ✅ | ✅ | ✅ | ✅ | Complete |
 | Instruction Memory | ✅ | ✅ | ✅ | ✅ | Complete |
 | Instruction Decoder | ✅ | ✅ | ✅ | ✅ | Complete |
-| Register File | ⬜ | ⬜ | ⬜ | ⬜ | Pending |
+| Register File | ✅ | ✅ | ✅ | ✅ | Complete |
 | ALU | ⬜ | ⬜ | ⬜ | ⬜ | Pending |
 | Control Unit | ⬜ | ⬜ | ⬜ | ⬜ | Pending |
 
@@ -195,9 +194,9 @@ This methodology reflects a structured ASIC design workflow where IP blocks are 
 
 # Current Status
 
-**Current Module:** Instruction Decoder ✅
+**Current Module:** Register File ✅
 
-The Instruction Decoder has been successfully:
+The Register File has been successfully:
 
 - Architected
 - Implemented in Verilog HDL
@@ -205,4 +204,4 @@ The Instruction Decoder has been successfully:
 - Validated using GTKWave
 - Documented
 
-The next stage of development is the **Register File** module.
+The next stage of development is the **ALU** module.

@@ -57,3 +57,22 @@
 - Understood continuous assignments (`assign`).
 - Learned the difference between `wire` and `reg`.
 - Understood that the decoder interprets instruction fields but does not execute them.
+## Day 4
+
+### Register File
+
+- Designed a parameterized Register File.
+- Implemented 16 × 8-bit register array.
+- Added asynchronous reset for all registers.
+- Implemented synchronous write operation.
+- Implemented dual combinational read ports.
+- Developed Register File testbench.
+- Verified functionality using Icarus Verilog.
+- Validated waveform using GTKWave.
+
+### Lessons Learned
+
+- Verilog register arrays
+- Using `for` loops for register initialization
+- Difference between sequential write and combinational read
+- Multi-port register file architecture
