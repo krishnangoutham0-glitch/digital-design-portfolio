@@ -1,0 +1,7 @@
+VCD info: dumpfile waveforms/instruction_decoder.vcd opened for output.
+Time=0 Instruction=0000000000000000 Opcode=0000 Dest=0000 Src1=0000 Src2=0000
+Time=20000 Instruction=0001000000000101 Opcode=0001 Dest=0000 Src1=0000 Src2=0101
+Time=40000 Instruction=0001000100000011 Opcode=0001 Dest=0001 Src1=0000 Src2=0011
+Time=60000 Instruction=0011001000000001 Opcode=0011 Dest=0010 Src1=0000 Src2=0001
+Time=80000 Instruction=1001000000000000 Opcode=1001 Dest=0000 Src1=0000 Src2=0000
+tb/instruction_decoder_tb.v:33: $finish called at 100000 (1ps)
