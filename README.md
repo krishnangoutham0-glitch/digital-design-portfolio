@@ -81,7 +81,7 @@ GDSII Generation
 
 | Project | RTL | Simulation | Synthesis | STA | PnR |
 |----------|:---:|:----------:|:---------:|:---:|:---:|
-| 4-bit Counter | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Counter | ✅ | ✅ | ✅ | ✅ | ✅ |
 | ALU | ✅ | ✅ | ✅ | ⏳ | ⏳ |
 | FIFO | ✅ | ✅ | ✅ | ⏳ | ⏳ |
 | UART | ✅ | ✅ | ⏳ | ⏳ | ⏳ |
@@ -92,7 +92,7 @@ GDSII Generation
 | Single Port RAM | ✅ | ✅ | ✅ | ⏳ | ⏳ |
 | Universal Shift Register | ✅ | ✅ | ✅ | ⏳ | ⏳ |
 | Traffic Light FSM | ✅ | ✅ | ✅ | ⏳ | ⏳ |
-| Mini ALU System | ✅ | ✅ | ✅ | ⏳ | ⏳ |
+| Mini ALU System | ✅ | ✅ | ✅ | ✅  | ✅  |
 
 ---
 
