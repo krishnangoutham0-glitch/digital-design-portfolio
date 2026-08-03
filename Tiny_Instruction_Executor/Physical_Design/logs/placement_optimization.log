@@ -1,0 +1,71 @@
+OpenROAD 26Q3-904-geaaa6e36cb 
+Features included (+) or not (-): +GPU -GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 8 thread(s).
+read_liberty /Users/gouthamkrishnan/OpenROAD-flow-scripts/flow/platforms/nangate45/lib/NangateOpenCellLibrary_typical.lib
+read_db ./results/nangate45/top/base/3_3_place_gp.odb
+read_sdc ./results/nangate45/top/base/2_floorplan.sdc
+source /Users/gouthamkrishnan/OpenROAD-flow-scripts/flow/platforms/nangate45/setRC.tcl
+estimate_parasitics -placement
+Perform buffer insertion and gate resizing...
+repair_design -verbose
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |       383
+       10 |     +0.0% |       0 |       0 |             0 |       373
+       20 |     +0.0% |       0 |       0 |             0 |       363
+       30 |     +0.0% |       0 |       0 |             0 |       353
+       40 |     +0.0% |       0 |       0 |             0 |       343
+       50 |     +0.0% |       0 |       0 |             0 |       333
+       60 |     +0.0% |       0 |       0 |             0 |       323
+       70 |     +0.0% |       0 |       0 |             0 |       313
+       80 |     +0.0% |       0 |       0 |             0 |       303
+       90 |     +0.0% |       0 |       0 |             0 |       293
+      100 |     +0.0% |       0 |       0 |             0 |       283
+      110 |     +0.0% |       0 |       0 |             0 |       273
+      120 |     +0.0% |       0 |       0 |             0 |       263
+      130 |     +0.0% |       0 |       0 |             0 |       253
+      140 |     +0.0% |       0 |       0 |             0 |       243
+      150 |     +0.0% |       0 |       0 |             0 |       233
+      160 |     +0.0% |       0 |       0 |             0 |       223
+      170 |     +0.0% |       0 |       0 |             0 |       213
+      180 |     +0.0% |       0 |       0 |             0 |       203
+      190 |     +0.0% |       0 |       0 |             0 |       193
+      200 |     +0.0% |       0 |       0 |             0 |       183
+      210 |     +0.0% |       0 |       0 |             0 |       173
+      220 |     +0.0% |       0 |       0 |             0 |       163
+      230 |     +0.0% |       0 |       0 |             0 |       153
+      240 |     +0.0% |       0 |       0 |             0 |       143
+      250 |     +0.0% |       0 |       0 |             0 |       133
+      260 |     +0.0% |       0 |       0 |             0 |       123
+      270 |     +0.0% |       0 |       0 |             0 |       113
+      280 |     +0.0% |       0 |       0 |             0 |       103
+      290 |     +0.0% |       0 |       0 |             0 |        93
+      300 |     +0.0% |       0 |       0 |             0 |        83
+      310 |     +0.3% |       0 |       1 |             1 |        73
+      320 |     +0.3% |       0 |       1 |             1 |        63
+      330 |     +0.3% |       0 |       1 |             1 |        53
+      340 |     +0.3% |       0 |       1 |             1 |        43
+      350 |     +0.3% |       0 |       1 |             1 |        33
+      360 |     +0.3% |       0 |       1 |             1 |        23
+      370 |     +0.3% |       0 |       1 |             1 |        13
+      380 |     +0.3% |       0 |       1 |             1 |         3
+    final |     +0.3% |       0 |       1 |             1 |         0
+---------------------------------------------------------------------
+[INFO RSZ-0036] Found 1 capacitance violations.
+[INFO RSZ-0038] Inserted 1 buffers in 1 nets.
+[INFO RSZ-0504] Runtime: 0.02s
+Floating nets: 
+Report metrics stage 3, resizer...
+
+==========================================================================
+resizer report_design_area
+--------------------------------------------------------------------------
+Design area 570 um^2 58% utilization.
+Instance count before 371, after 372
+Pin count before 1209, after 1211
+write_db ./results/nangate45/top/base/3_4_place_resized.odb
+Elapsed time: 0:00.35[h:]min:sec. CPU time: user 0.32 sys 0.06 (108%). Peak memory: 110944KB.
+Log                       Ext     Elapsed/s Peak Memory/MB sha1sum result [0:20)
+3_4_place_resized         .odb            0            108 09d51d2396b0bcdb4369

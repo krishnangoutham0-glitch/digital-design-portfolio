@@ -1,0 +1,203 @@
+OpenSTA 3.1.0 5be03c5cca Copyright (c) 2026, Parallax Software, Inc.
+License GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>
+
+This is free software, and you are free to change and redistribute it
+under certain conditions; type `show_copying' for details. 
+This program comes with ABSOLUTELY NO WARRANTY; for details type `show_warranty'.
+Startpoint: _1198_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: alu_result_out[7] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout       Cap      Slew     Delay      Time   Description
+-------------------------------------------------------------------------------------
+                    0.1000    0.0000    0.0000   clock clk (rise edge)
+                              0.2000    0.2000   clock network delay (ideal)
+                    0.1000    0.0000    0.2000 ^ _1198_/CK (DFFR_X1)
+     5    5.5532    0.0105    0.1095    0.3095 v _1198_/Q (DFFR_X1)
+                                                 u_pc.pc[4] (net)
+                    0.0105    0.0000    0.3095 v _0674_/A4 (OR4_X1)
+     8   11.8751    0.0294    0.1427    0.4522 v _0674_/ZN (OR4_X1)
+                                                 _0287_ (net)
+                    0.0294    0.0000    0.4522 v _0725_/A2 (NOR2_X1)
+     5    6.7227    0.0389    0.0619    0.5141 ^ _0725_/ZN (NOR2_X1)
+                                                 _0328_ (net)
+                    0.0389    0.0000    0.5141 ^ _0731_/A1 (NAND2_X1)
+     8   11.8805    0.0273    0.0458    0.5599 v _0731_/ZN (NAND2_X1)
+                                                 _0334_ (net)
+                    0.0273    0.0000    0.5599 v _0776_/B1 (AOI222_X1)
+     1    1.5840    0.0462    0.0808    0.6407 ^ _0776_/ZN (AOI222_X1)
+                                                 _0379_ (net)
+                    0.0462    0.0000    0.6407 ^ _0778_/B1 (AOI22_X1)
+     4    5.5596    0.0247    0.0410    0.6817 v _0778_/ZN (AOI22_X1)
+                                                 _0381_ (net)
+                    0.0247    0.0000    0.6817 v _0781_/A3 (OR3_X1)
+     2    2.9491    0.0148    0.0896    0.7713 v _0781_/ZN (OR3_X1)
+                                                 _0384_ (net)
+                    0.0148    0.0000    0.7713 v _0818_/B1 (AOI21_X1)
+     2    2.5138    0.0264    0.0325    0.8038 ^ _0818_/ZN (AOI21_X1)
+                                                 _0421_ (net)
+                    0.0264    0.0000    0.8038 ^ _0821_/B2 (OAI21_X1)
+     2    2.2929    0.0132    0.0225    0.8262 v _0821_/ZN (OAI21_X1)
+                                                 _0424_ (net)
+                    0.0132    0.0000    0.8262 v _0822_/B2 (AOI21_X1)
+     3    4.2570    0.0335    0.0457    0.8719 ^ _0822_/ZN (AOI21_X1)
+                                                 _0425_ (net)
+                    0.0335    0.0000    0.8719 ^ _0823_/B2 (OAI21_X1)
+     3    3.7623    0.0168    0.0284    0.9003 v _0823_/ZN (OAI21_X1)
+                                                 _0426_ (net)
+                    0.0168    0.0000    0.9003 v _0824_/B2 (AOI21_X1)
+     3    4.7129    0.0356    0.0494    0.9497 ^ _0824_/ZN (AOI21_X1)
+                                                 _0427_ (net)
+                    0.0356    0.0000    0.9497 ^ _0829_/B2 (OAI21_X1)
+     2    3.0209    0.0161    0.0270    0.9767 v _0829_/ZN (OAI21_X1)
+                                                 _0432_ (net)
+                    0.0161    0.0000    0.9767 v _0996_/A (OAI21_X1)
+     1    2.5736    0.0227    0.0258    1.0025 ^ _0996_/ZN (OAI21_X1)
+                                                 _0518_ (net)
+                    0.0227    0.0000    1.0025 ^ _0997_/B (XNOR2_X1)
+     1    1.5952    0.0190    0.0417    1.0442 ^ _0997_/ZN (XNOR2_X1)
+                                                 _0519_ (net)
+                    0.0190    0.0000    1.0442 ^ _0998_/C1 (OAI211_X1)
+     6    4.5852    0.0213    0.0306    1.0748 v _0998_/ZN (OAI211_X1)
+                                                 alu_result_out[7] (net)
+                    0.0213    0.0000    1.0748 v alu_result_out[7] (out)
+                                        1.0748   data arrival time
+
+                    0.1000   10.0000   10.0000   clock clk (rise edge)
+                              0.2000   10.2000   clock network delay (ideal)
+                             -0.1000   10.1000   clock uncertainty
+                              0.0000   10.1000   clock reconvergence pessimism
+                             -1.0000    9.1000   output external delay
+                                        9.1000   data required time
+-------------------------------------------------------------------------------------
+                                        9.1000   data required time
+                                       -1.0748   data arrival time
+-------------------------------------------------------------------------------------
+                                        8.0252   slack (MET)
+
+
+Startpoint: _1289_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _1289_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+Fanout       Cap      Slew     Delay      Time   Description
+-------------------------------------------------------------------------------------
+                    0.1000    0.0000    0.0000   clock clk (rise edge)
+                              0.2000    0.2000   clock network delay (ideal)
+                    0.1000    0.0000    0.2000 ^ _1289_/CK (DFFR_X1)
+     1    1.5494    0.0067    0.1026    0.3026 v _1289_/Q (DFFR_X1)
+                                                 u_register_file.reg_file[9][7] (net)
+                    0.0067    0.0000    0.3026 v _0670_/A (INV_X1)
+     1    1.7145    0.0067    0.0115    0.3141 ^ _0670_/ZN (INV_X1)
+                                                 _0284_ (net)
+                    0.0067    0.0000    0.3141 ^ _1001_/A1 (NOR2_X1)
+     1    1.0527    0.0033    0.0068    0.3209 v _1001_/ZN (NOR2_X1)
+                                                 _0148_ (net)
+                    0.0033    0.0000    0.3209 v _1289_/D (DFFR_X1)
+                                        0.3209   data arrival time
+
+                    0.1000    0.0000    0.0000   clock clk (rise edge)
+                              0.2000    0.2000   clock network delay (ideal)
+                              0.1000    0.3000   clock uncertainty
+                              0.0000    0.3000   clock reconvergence pessimism
+                                        0.3000 ^ _1289_/CK (DFFR_X1)
+                              0.0116    0.3116   library hold time
+                                        0.3116   data required time
+-------------------------------------------------------------------------------------
+                                        0.3116   data required time
+                                       -0.3209   data arrival time
+-------------------------------------------------------------------------------------
+                                        0.0093   slack (MET)
+
+
+wns max 0.00
+tns max 0.00
+Clock                   Period          Waveform
+----------------------------------------------------
+clk                      10.00        0.00      5.00
+Startpoint: _1198_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: alu_result_out[7] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.20    0.20   clock network delay (ideal)
+   0.00    0.20 ^ _1198_/CK (DFFR_X1)
+   0.11    0.31 v _1198_/Q (DFFR_X1)
+   0.14    0.45 v _0674_/ZN (OR4_X1)
+   0.06    0.51 ^ _0725_/ZN (NOR2_X1)
+   0.05    0.56 v _0731_/ZN (NAND2_X1)
+   0.08    0.64 ^ _0776_/ZN (AOI222_X1)
+   0.04    0.68 v _0778_/ZN (AOI22_X1)
+   0.09    0.77 v _0781_/ZN (OR3_X1)
+   0.03    0.80 ^ _0818_/ZN (AOI21_X1)
+   0.02    0.83 v _0821_/ZN (OAI21_X1)
+   0.05    0.87 ^ _0822_/ZN (AOI21_X1)
+   0.03    0.90 v _0823_/ZN (OAI21_X1)
+   0.05    0.95 ^ _0824_/ZN (AOI21_X1)
+   0.03    0.98 v _0829_/ZN (OAI21_X1)
+   0.03    1.00 ^ _0996_/ZN (OAI21_X1)
+   0.04    1.04 ^ _0997_/ZN (XNOR2_X1)
+   0.03    1.07 v _0998_/ZN (OAI211_X1)
+   0.00    1.07 v alu_result_out[7] (out)
+           1.07   data arrival time
+
+  10.00   10.00   clock clk (rise edge)
+   0.20   10.20   clock network delay (ideal)
+  -0.10   10.10   clock uncertainty
+   0.00   10.10   clock reconvergence pessimism
+  -1.00    9.10   output external delay
+           9.10   data required time
+---------------------------------------------------------
+           9.10   data required time
+          -1.07   data arrival time
+---------------------------------------------------------
+           8.03   slack (MET)
+
+
+Startpoint: _1198_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: alu_result_out[7] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.20    0.20   clock network delay (ideal)
+   0.00    0.20 ^ _1198_/CK (DFFR_X1)
+   0.11    0.31 v _1198_/Q (DFFR_X1)
+   0.14    0.45 v _0674_/ZN (OR4_X1)
+   0.06    0.51 ^ _0725_/ZN (NOR2_X1)
+   0.05    0.56 v _0731_/ZN (NAND2_X1)
+   0.08    0.64 ^ _0776_/ZN (AOI222_X1)
+   0.04    0.68 v _0778_/ZN (AOI22_X1)
+   0.09    0.77 v _0781_/ZN (OR3_X1)
+   0.03    0.80 ^ _0818_/ZN (AOI21_X1)
+   0.02    0.83 v _0821_/ZN (OAI21_X1)
+   0.05    0.87 ^ _0822_/ZN (AOI21_X1)
+   0.03    0.90 v _0823_/ZN (OAI21_X1)
+   0.05    0.95 ^ _0824_/ZN (AOI21_X1)
+   0.03    0.98 v _0829_/ZN (OAI21_X1)
+   0.03    1.00 ^ _0996_/ZN (OAI21_X1)
+   0.04    1.04 ^ _0997_/ZN (XNOR2_X1)
+   0.03    1.07 v _0998_/ZN (OAI211_X1)
+   0.00    1.07 v alu_result_out[7] (out)
+           1.07   data arrival time
+
+  10.00   10.00   clock clk (rise edge)
+   0.20   10.20   clock network delay (ideal)
+  -0.10   10.10   clock uncertainty
+   0.00   10.10   clock reconvergence pessimism
+  -1.00    9.10   output external delay
+           9.10   data required time
+---------------------------------------------------------
+           9.10   data required time
+          -1.07   data arrival time
+---------------------------------------------------------
+           8.03   slack (MET)
+
+

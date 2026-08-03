@@ -1,0 +1,20 @@
+OpenROAD 26Q3-904-geaaa6e36cb 
+Features included (+) or not (-): +GPU -GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 8 thread(s).
+read_liberty /Users/gouthamkrishnan/OpenROAD-flow-scripts/flow/platforms/nangate45/lib/NangateOpenCellLibrary_typical.lib
+[INFO ODB-0227] LEF file: /Users/gouthamkrishnan/OpenROAD-flow-scripts/flow/platforms/nangate45/lef/NangateOpenCellLibrary.tech.lef, created 22 layers, 27 vias
+[INFO ODB-0227] LEF file: /Users/gouthamkrishnan/OpenROAD-flow-scripts/flow/platforms/nangate45/lef/NangateOpenCellLibrary.macro.mod.lef, created 135 library cells
+link_design top
+read_sdc ./results/nangate45/top/base/1_2_yosys.sdc
+source /Users/gouthamkrishnan/OpenROAD-flow-scripts/flow/platforms/nangate45/setRC.tcl
+eliminate_dead_logic
+Removed 0 unused instances and 0 unused nets.
+Design area 570 um^2 100% utilization.
+write_db ./results/nangate45/top/base/1_synth.odb
+write_sdc -no_timestamp ./results/nangate45/top/base/1_synth.sdc
+Elapsed time: 0:00.31[h:]min:sec. CPU time: user 0.24 sys 0.03 (90%). Peak memory: 87248KB.
+Log                       Ext     Elapsed/s Peak Memory/MB sha1sum result [0:20)
+1_synth                   .odb            0             85 c3482f99dc0c73ffa04f
+1_synth                   .sdc                             476fc398df586652e226
