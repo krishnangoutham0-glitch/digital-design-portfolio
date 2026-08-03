@@ -1,0 +1,25 @@
+VCD info: dumpfile waveforms/top.vcd opened for output.
+Time=0 PC=0 halt=0 reg_write=1 dest=0 alu_result=5 | R0=0 R1=0 R2=0
+Time=5000 PC=0 halt=0 reg_write=1 dest=0 alu_result=5 | R0=0 R1=0 R2=0
+Time=15000 PC=1 halt=0 reg_write=1 dest=1 alu_result=3 | R0=5 R1=0 R2=0
+Time=25000 PC=2 halt=0 reg_write=1 dest=2 alu_result=8 | R0=5 R1=3 R2=0
+Time=35000 PC=3 halt=0 reg_write=1 dest=3 alu_result=2 | R0=5 R1=3 R2=8
+Time=45000 PC=4 halt=0 reg_write=1 dest=4 alu_result=1 | R0=5 R1=3 R2=8
+Time=55000 PC=5 halt=0 reg_write=1 dest=5 alu_result=7 | R0=5 R1=3 R2=8
+Time=65000 PC=6 halt=0 reg_write=1 dest=6 alu_result=6 | R0=5 R1=3 R2=8
+Time=75000 PC=7 halt=0 reg_write=1 dest=7 alu_result=250 | R0=5 R1=3 R2=8
+Time=85000 PC=8 halt=0 reg_write=1 dest=8 alu_result=10 | R0=5 R1=3 R2=8
+Time=95000 PC=9 halt=0 reg_write=1 dest=9 alu_result=2 | R0=5 R1=3 R2=8
+Time=105000 PC=10 halt=1 reg_write=0 dest=0 alu_result=10 | R0=5 R1=3 R2=8
+PASS: R0 = 5 (expected 5)
+PASS: R1 = 3 (expected 3)
+PASS: R2 = 8 (expected 8)
+PASS: R3 = 2 (expected 2)
+PASS: R4 = 1 (expected 1)
+PASS: R5 = 7 (expected 7)
+PASS: R6 = 6 (expected 6)
+PASS: R7 = 250 (expected 250)
+PASS: R8 = 10 (expected 10)
+PASS: R9 = 2 (expected 2)
+PASS: halt asserted after HALT instruction
+tb/top_tb.v:102: $finish called at 112000 (1ps)
